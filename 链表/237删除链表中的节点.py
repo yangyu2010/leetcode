@@ -34,3 +34,6 @@ l5.next = l6
 l6.next = l7
 
 Solution().deleteNode(l7)
+
+print('test')
+
