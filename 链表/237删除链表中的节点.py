@@ -1,12 +1,13 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+# Author: Yu Yang
+
 # https://leetcode-cn.com/problems/delete-node-in-a-linked-list/
 
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+from ListNode import ListNode
 
 class Solution:
-    def deleteNode(self, node):
+    def deleteNode(self, node: ListNode):
         """
         :type node: ListNode
         :rtype: void Do not return anything, modify node in-place instead.
@@ -34,6 +35,3 @@ l5.next = l6
 l6.next = l7
 
 Solution().deleteNode(l7)
-
-print('test')
-
