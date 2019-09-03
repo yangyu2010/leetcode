@@ -1,6 +1,12 @@
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
-# Author: Yu Yang
+# -*- coding: utf-8 -*-
+
+'''
+@Author: YangYu
+@Github: https://github.com/yangyu2010
+@Date: 2019-09-02 09:24:18
+@LastEditors: YangYu
+@LastEditTime: 2019-09-03 16:17:50
+'''
 
 class ListNode:
     def __init__(self, x):
@@ -14,9 +20,7 @@ class ListNode:
             s += str(self.prev.val)
         else:
             s += 'none'
-
         s += ('->%d->' % self.val)
-
         if self.next:
             s += str(self.next.val)
         else:
