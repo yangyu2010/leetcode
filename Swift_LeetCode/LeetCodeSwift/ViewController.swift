@@ -16,16 +16,15 @@ class ViewController: UIViewController {
         
         testArrayList()
         
-        
-//        var arr = Array<Int>()
-//        arr.append(11)
-//        arr.append(22)
-//        arr.append(33)
-//        arr.append(44)
-//        arr.append(55)
-//        print(arr)
-//        arr.insert(66, at: 1)
-//        print(arr)
+        var arr = Array<Int>()
+        arr.append(11)
+        arr.append(22)
+        arr.append(33)
+        arr.append(44)
+        arr.append(55)
+        print(arr)
+        arr.insert(66, at: 1)
+        print(arr)
         
     }
 
@@ -39,7 +38,8 @@ class ViewController: UIViewController {
         arr.add(44)
         arr.add(55)
         
-        print(arr)
+        print(arr.get(0))
+        
 //        arr.insert(66, at: 1)
 //        arr.insert(at: 0, element: 66)
         arr.remove(at: 1)
