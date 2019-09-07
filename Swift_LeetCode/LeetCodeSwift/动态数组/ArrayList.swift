@@ -21,13 +21,13 @@ public struct ArrayList<T: Equatable> {
     /// arrayList的size
     private(set) var size: Int = 0
 
-    public init(capaticy: Int) {
-        if capaticy < DEFAULT_CAPACITY {
-            elements = [T?](repeating: nil, count: DEFAULT_CAPACITY)
-        } else {
-            elements = [T?](repeating: nil, count: capaticy)
-        }
-    }
+//    public init(capaticy: Int) {
+//        if capaticy < DEFAULT_CAPACITY {
+//            elements = [T?](repeating: nil, count: DEFAULT_CAPACITY)
+//        } else {
+//            elements = [T?](repeating: nil, count: capaticy)
+//        }
+//    }
     
     public init() {
         elements = [T?](repeating: nil, count: DEFAULT_CAPACITY)
@@ -59,6 +59,44 @@ public struct ArrayList<T: Equatable> {
         }
     }
     
+    /// 检查容量大小 适当时候扩容
+    private mutating func ensureCapacity(capacity: Int) {
+        let oldCapacity = elements.count
+        if oldCapacity >= capacity {
+            return
+        }
+        
+        let newCapacity = oldCapacity + oldCapacity >> 1
+        var newElements = [T?](repeating: nil, count: newCapacity)
+        for i in 0..<size {
+            newElements[i] = elements[i]
+        }
+        elements = newElements
+        print("-----------\(oldCapacity) 扩容为 \(newCapacity)---------")
+        
+    }
+    
+    /// 缩容
+    private mutating func trim() {
+        let oldCapacity = elements.count
+        let newCapacity = oldCapacity >> 1
+
+        // 当前capacity已经比默认的小了 return
+        // 当前的使用量大于总容量的一半时 return
+        if oldCapacity <= DEFAULT_CAPACITY ||
+            size > newCapacity {
+            return
+        }
+        
+        var newElements = [T?](repeating: nil, count: newCapacity)
+        for i in 0..<size {
+            newElements[i] = elements[i]
+        }
+        elements = newElements
+        print("-----------\(oldCapacity) 缩容为 \(newCapacity)---------")
+        
+    }
+    
     /// 是否为空
     public func isEmpty() -> Bool {
         return size == 0
@@ -76,8 +114,7 @@ public struct ArrayList<T: Equatable> {
          elements.append(element)
          系统会自动扩容, 添加到尾部
          */
-        elements[size] = element
-        size += 1
+        insert(element, at: size)
     }
     
     /// 获取某个位置的元素
@@ -101,6 +138,9 @@ public struct ArrayList<T: Equatable> {
     /// 往index位置插入元素
     public mutating func insert(_ element: T, at index: Int) {
         try! checkIndexForAdd(index)
+        
+        // 检查容量
+        ensureCapacity(capacity: size + 1)
         
         /*
          0  1  2  3  4
@@ -129,10 +169,11 @@ public struct ArrayList<T: Equatable> {
          需要把2-4((index+1)-size)的元素往前移动
          **/
         let old_element = elements[index]
-        for i in (index + 1)...size {
+        for i in (index + 1)..<size {
             elements[i-1] = elements[i]
         }
         size -= 1
+        trim()
         return old_element
     }
     
@@ -148,7 +189,12 @@ public struct ArrayList<T: Equatable> {
     
     /// 清空所以元素
     public mutating func removeAll() {
+        for i in 0..<size {
+            print(i)
+            elements[i] = nil
+        }
         size = 0
+        trim()
     }
     
 }

@@ -30,24 +30,49 @@ class ViewController: UIViewController {
 
     func testArrayList() {
         var arr = ArrayList<Int>()
-//        arr.insert(index: 1, element: 10)
-//        let a = arr.get(index: 0)
-        arr.add(11)
-        arr.add(22)
-        arr.add(33)
-        arr.add(44)
-        arr.add(55)
-        
-        if let e = arr.get(0) {
-            print(e)
-        }
-        arr.insert(66, at: 0)
-        arr.insert(77, at: arr.size)
-        arr.contains(77)
 
-//        arr.insert(at: 0, element: 66)
-//        arr.remove(at: 1)
+//        arr.add(11)
+//        arr.add(22)
+//        arr.add(33)
+//        arr.add(44)
+//        arr.add(55)
+//
+//        if let e = arr.get(0) {
+//            print(e)
+//        }
+//        arr.insert(66, at: 0)
+//
+//        if let e = arr.get(0) {
+//            print(e)
+//        }
+//
+//        arr.insert(77, at: arr.size)
+//        arr.insert(88, at: 0)
+//
+////        arr.insert(at: 0, element: 88)
+//        print(arr)
+//        arr.removeAll()
+//        print(arr)
+        
+        
+        for i in 0..<10 {
+            print(i)
+            arr.add(i)
+        }
+        
         print(arr)
+        print("-----------------------------")
+//        for i in 0..<10 {
+//            print(i)
+//            arr.remove(at: i)
+//        }
+        for i in (0..<10).reversed() {
+            print(i)
+            arr.remove(at: i)
+        }
+        
+        print(arr)
+
     }
 }
 
