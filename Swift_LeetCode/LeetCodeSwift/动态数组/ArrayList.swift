@@ -33,12 +33,16 @@ public struct ArrayList<T: Equatable> {
         elements = [T?](repeating: nil, count: DEFAULT_CAPACITY)
     }
     
-    var description: String {
+    public var description: String {
         var str = ""
         for e in elements {
             str += e.debugDescription
         }
         return str
+    }
+    
+    public var debugDescription: String {
+        return "debugDescription1111"
     }
     
     /// 检查index(查询, 移除时)
@@ -79,7 +83,11 @@ public struct ArrayList<T: Equatable> {
     /// 获取某个位置的元素
     public func get(_ index: Int) -> T? {
         try! checkIndex(index)
-        return elements[index]
+        if let element = elements[index] {
+            return element
+        } else {
+            return nil
+        }
     }
     
     /// 设置index位置的元素 返回之前该位置的元素
@@ -130,9 +138,9 @@ public struct ArrayList<T: Equatable> {
     
     /// 查看某个元素的位置
     public func indexOf(_ element: T) -> Int {
-        for (index, item) in elements.enumerated() {
-            if item != nil && item! == element {
-                return index
+        for i in 0..<size {
+            if let item = elements[i], item == element {
+                return i
             }
         }
         return ELEMENT_NOT_FOUND
@@ -144,3 +152,10 @@ public struct ArrayList<T: Equatable> {
     }
     
 }
+
+
+//extension ArrayList: CustomStringConvertible {
+//    var description: String {
+//        return ""
+//    }
+//}

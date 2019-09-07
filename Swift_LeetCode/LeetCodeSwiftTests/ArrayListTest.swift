@@ -22,15 +22,42 @@ class ArrayListTest: XCTestCase {
 
     func testArrayAdd() {
         var arr = ArrayList<Int>()
+
         arr.add(11)
         arr.add(22)
         arr.add(33)
         arr.add(44)
         arr.add(55)
-
-        print(arr.indexOf(0))
-        XCTAssertTrue(arr.indexOf(0) == 11, "")
         
+        if let e = arr.get(0) {
+            XCTAssertTrue(e == 11, "")
+        }
+        arr.insert(66, at: 0)
+        arr.insert(77, at: arr.size)
+        arr.remove(at: 1)
+        arr.add(88)
+        
+        XCTAssertTrue(arr.size == 7, "")
+
+        if let e = arr.get(1) {
+            XCTAssertTrue(e == 22, "")
+        }
+        
+        if let e = arr.get(arr.size - 1) {
+            XCTAssertTrue(e == 88, "")
+        }
+        
+        XCTAssertTrue(arr.contains(11) == false, "")
+        XCTAssertTrue(arr.contains(22) == true, "")
+        XCTAssertTrue(arr.isEmpty() == false, "")
+
+        arr.removeAll()
+        
+        XCTAssertTrue(arr.isEmpty() == true, "")
+        XCTAssertTrue(arr.contains(11) == false, "")
+        XCTAssertTrue(arr.contains(22) == false, "")
+
+
     }
     
     func testExample() {
