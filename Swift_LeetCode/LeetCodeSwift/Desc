@@ -1,0 +1,64 @@
+动态数组ArrayList
+
+链表LinkedList
+单向链表
+单向循环列表
+双向链表
+双向循环列表
+
+栈Stack
+栈 lat in first out LIFO
+
+队列Queue
+队列  头部出队 尾部入队 first in first out FIFO
+双端队列
+循环队列
+双端循环队列
+
+
+
+/// 是否为空
+public func isEmpty() -> Bool {
+return size == 0
+}
+
+/// 是否包含某个元素
+public func contains(_ element: T) -> Bool {
+return false
+}
+
+/// 添加元素
+public func append(_ element: T) {
+
+}
+
+/// 获取某个位置的元素
+public func get(_ index: Int) -> T? {
+return nil
+}
+
+/// 设置index位置的元素 返回之前该位置的元素
+public func set(_ index: Int, element: T) ->T? {
+return nil
+}
+
+/// 往index位置插入元素
+public func insert(_ element: T, at index: Int) {
+
+}
+
+/// 删除某个位置的元素
+@discardableResult
+public func remove(at index: Int) ->T? {
+return nil
+}
+
+/// 查看某个元素的位置
+public func indexOf(_ element: T) -> Int {
+return ELEMENT_NOT_FOUND
+}
+
+/// 清空所以元素
+public func removeAll() {
+
+}

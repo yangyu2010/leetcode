@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
 //        testArrayList()
-        testArrayList2()
+//        testArrayList2()
 //        var arr = Array<Int>()
 //        arr.append(11)
 //        arr.append(22)

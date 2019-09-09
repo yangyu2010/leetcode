@@ -15,6 +15,10 @@
 		86559119231E5D46001D22D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86559118231E5D46001D22D8 /* Assets.xcassets */; };
 		8655911C231E5D46001D22D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8655911A231E5D46001D22D8 /* LaunchScreen.storyboard */; };
 		86E1C40C23222FE300DC933C /* ArrayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1C40B23222FE300DC933C /* ArrayList.swift */; };
+		86EADE2023263432008EFE86 /* Desc in Resources */ = {isa = PBXBuildFile; fileRef = 86EADE1F23263432008EFE86 /* Desc */; };
+		86EADE2223263EA7008EFE86 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EADE2123263EA7008EFE86 /* LinkedList.swift */; };
+		86EADE2423264B73008EFE86 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EADE2323264B73008EFE86 /* Error.swift */; };
+		86EADE2623265852008EFE86 /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EADE2523265852008EFE86 /* LinkedListTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		8655911B231E5D46001D22D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8655911D231E5D46001D22D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86E1C40B23222FE300DC933C /* ArrayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayList.swift; sourceTree = "<group>"; };
+		86EADE1F23263432008EFE86 /* Desc */ = {isa = PBXFileReference; lastKnownFileType = text; path = Desc; sourceTree = "<group>"; };
+		86EADE2123263EA7008EFE86 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		86EADE2323264B73008EFE86 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		86EADE2523265852008EFE86 /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				861E083F23226DA900A38E04 /* ArrayListTest.swift */,
+				86EADE2523265852008EFE86 /* LinkedListTest.swift */,
 				861E083723226D6000A38E04 /* LeetCodeSwiftTests.swift */,
 				861E083923226D6000A38E04 /* Info.plist */,
 			);
@@ -91,6 +100,8 @@
 		86559110231E5D45001D22D8 /* LeetCodeSwift */ = {
 			isa = PBXGroup;
 			children = (
+				86EADE1F23263432008EFE86 /* Desc */,
+				86EADE2323264B73008EFE86 /* Error.swift */,
 				86559124231E5D77001D22D8 /* 动态数组 */,
 				86559126231E5D77001D22D8 /* 链表 */,
 				86559125231E5D77001D22D8 /* 栈 */,
@@ -130,6 +141,7 @@
 		86559126231E5D77001D22D8 /* 链表 */ = {
 			isa = PBXGroup;
 			children = (
+				86EADE2123263EA7008EFE86 /* LinkedList.swift */,
 			);
 			path = "链表";
 			sourceTree = "<group>";
@@ -225,6 +237,7 @@
 				8655911C231E5D46001D22D8 /* LaunchScreen.storyboard in Resources */,
 				86559119231E5D46001D22D8 /* Assets.xcassets in Resources */,
 				86559117231E5D45001D22D8 /* Main.storyboard in Resources */,
+				86EADE2023263432008EFE86 /* Desc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +250,7 @@
 			files = (
 				861E083823226D6000A38E04 /* LeetCodeSwiftTests.swift in Sources */,
 				861E084023226DA900A38E04 /* ArrayListTest.swift in Sources */,
+				86EADE2623265852008EFE86 /* LinkedListTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +260,8 @@
 			files = (
 				86559114231E5D45001D22D8 /* ViewController.swift in Sources */,
 				86E1C40C23222FE300DC933C /* ArrayList.swift in Sources */,
+				86EADE2223263EA7008EFE86 /* LinkedList.swift in Sources */,
+				86EADE2423264B73008EFE86 /* Error.swift in Sources */,
 				86559112231E5D45001D22D8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

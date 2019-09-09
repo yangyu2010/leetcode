@@ -8,11 +8,7 @@
 
 public struct ArrayList<T: Equatable> {
 
-    public enum ArrayListError: Error {
-        case indexOutOfBounds
-        case elementNotFound
-    }
-    
+
     /// 元素没有找到返回值
     public let ELEMENT_NOT_FOUND: Int = -1
     /// 默认创建数组的大小
@@ -49,14 +45,14 @@ public struct ArrayList<T: Equatable> {
     /// 检查index(查询, 移除时)
     private func checkIndex(_ index: Int) throws {
         if index < 0 || index > size - 1 {
-            throw ArrayListError.indexOutOfBounds
+            throw ListError.indexOutOfBounds
         }
     }
     
     /// 检查index(插入时)
     private func checkIndexForAdd(_ index: Int) throws {
         if index < 0 || index > size {
-            throw ArrayListError.indexOutOfBounds
+            throw ListError.indexOutOfBounds
         }
     }
     
@@ -120,7 +116,7 @@ public struct ArrayList<T: Equatable> {
     }
     
     /// 获取某个位置的元素
-    public func get(_ index: Int) throws -> T? {
+    public func get(_ index: Int) -> T? {
         try! checkIndex(index)
         if let element = elements[index] {
             return element
