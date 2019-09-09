@@ -20,14 +20,15 @@ class ArrayListTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    /// 测试增删改查
     func testArrayAdd() {
         var arr = ArrayList<Int>()
 
-        arr.add(11)
-        arr.add(22)
-        arr.add(33)
-        arr.add(44)
-        arr.add(55)
+        arr.append(11)
+        arr.append(22)
+        arr.append(33)
+        arr.append(44)
+        arr.append(55)
         
         if let e = arr.get(0) {
             XCTAssertTrue(e == 11, "")
@@ -35,7 +36,7 @@ class ArrayListTest: XCTestCase {
         arr.insert(66, at: 0)
         arr.insert(77, at: arr.size)
         arr.remove(at: 1)
-        arr.add(88)
+        arr.append(88)
         
         XCTAssertTrue(arr.size == 7, "")
 
@@ -57,7 +58,65 @@ class ArrayListTest: XCTestCase {
         XCTAssertTrue(arr.contains(11) == false, "")
         XCTAssertTrue(arr.contains(22) == false, "")
 
+    }
+    
+    /// 测试扩容
+    func testExpansion() {
+        var arr = ArrayList<Int>()
 
+        for i in 0..<30 {
+            arr.append(i)
+        }
+        
+        XCTAssertTrue(arr.size == 30)
+        XCTAssertTrue(arr.contains(0))
+        XCTAssertTrue(arr.contains(29))
+        
+        print(arr)
+
+        for i in (0..<20).reversed() {
+            arr.remove(at: i)
+        }
+        arr.append(5555)
+        print(arr)
+    }
+    
+    class Person: NSObject {
+        var name: String?
+        var age: Int = 0
+        
+        deinit {
+            print((name ?? "没有name") + " " + "\(age)的Person被销毁了")
+        }
+    }
+    
+    /// 测试扩容
+    func testExpansion2() {
+//        2 2 4 8 16 32
+//        var array: [Int] = []
+//        for i in 1...100 {
+//            array.append(i)
+//            let arrayPtr = UnsafeMutableBufferPointer<Int>(start: &array, count: array.count)
+//            print(arrayPtr)
+//        }
+        
+        var arr = ArrayList<Person>()
+
+        for i in 0..<30 {
+            let p = Person()
+            p.age = i
+            p.name = "name_\(i)"
+
+            arr.append(p)
+        }
+
+        arr.removeAll()
+
+//        for i in (0..<20).reversed() {
+//            arr.remove(at: i)
+//        }
+        
+        print(arr)
     }
     
     func testExample() {

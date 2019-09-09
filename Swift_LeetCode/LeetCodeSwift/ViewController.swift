@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testArrayList()
-        
+//        testArrayList()
+        testArrayList2()
 //        var arr = Array<Int>()
 //        arr.append(11)
 //        arr.append(22)
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         
         for i in 0..<10 {
             print(i)
-            arr.add(i)
+            arr.append(i)
         }
         
         print(arr)
@@ -72,7 +72,39 @@ class ViewController: UIViewController {
         }
         
         print(arr)
-
+        print(arr.contains(0))
+        
+    }
+    
+    
+    class Person: NSObject {
+        var name: String?
+        var age: Int = 0
+        
+        deinit {
+            print((name ?? "没有name") + " " + "\(age)的Person被销毁了")
+        }
+    }
+    
+    func testArrayList2() {
+        
+        var arr = ArrayList<Person>()
+        
+        for i in 0..<30 {
+            let p = Person()
+            p.age = i
+            p.name = "name_\(i)"
+            
+            arr.append(p)
+        }
+        
+//        arr.removeAll()
+        
+//        for i in (0..<30).reversed() {
+//            arr.remove(at: i)
+//        }
+        
+        print(arr)
     }
 }
 

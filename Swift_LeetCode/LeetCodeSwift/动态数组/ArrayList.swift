@@ -10,6 +10,7 @@ public struct ArrayList<T: Equatable> {
 
     public enum ArrayListError: Error {
         case indexOutOfBounds
+        case elementNotFound
     }
     
     /// 元素没有找到返回值
@@ -80,6 +81,7 @@ public struct ArrayList<T: Equatable> {
     private mutating func trim() {
         let oldCapacity = elements.count
         let newCapacity = oldCapacity >> 1
+//        print("--------准备缩容---\(oldCapacity)--\(newCapacity)-")
 
         // 当前capacity已经比默认的小了 return
         // 当前的使用量大于总容量的一半时 return
@@ -87,7 +89,7 @@ public struct ArrayList<T: Equatable> {
             size > newCapacity {
             return
         }
-        
+
         var newElements = [T?](repeating: nil, count: newCapacity)
         for i in 0..<size {
             newElements[i] = elements[i]
@@ -108,7 +110,7 @@ public struct ArrayList<T: Equatable> {
     }
     
     /// 添加元素
-    public mutating func add(_ element: T) {
+    public mutating func append(_ element: T) {
         /**
          这里不能用append()
          elements.append(element)
@@ -118,12 +120,13 @@ public struct ArrayList<T: Equatable> {
     }
     
     /// 获取某个位置的元素
-    public func get(_ index: Int) -> T? {
+    public func get(_ index: Int) throws -> T? {
         try! checkIndex(index)
         if let element = elements[index] {
             return element
         } else {
             return nil
+//            throw ArrayListError.elementNotFound
         }
     }
     
@@ -172,6 +175,8 @@ public struct ArrayList<T: Equatable> {
         for i in (index + 1)..<size {
             elements[i-1] = elements[i]
         }
+        elements[size-1] = nil
+        // 把最后一个置空
         size -= 1
         trim()
         return old_element
@@ -190,7 +195,6 @@ public struct ArrayList<T: Equatable> {
     /// 清空所以元素
     public mutating func removeAll() {
         for i in 0..<size {
-            print(i)
             elements[i] = nil
         }
         size = 0
