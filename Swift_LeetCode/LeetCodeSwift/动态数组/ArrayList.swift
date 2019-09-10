@@ -30,18 +30,7 @@ public struct ArrayList<T: Equatable> {
         elements = [T?](repeating: nil, count: DEFAULT_CAPACITY)
     }
     
-    public var description: String {
-        var str = ""
-        for e in elements {
-            str += e.debugDescription
-        }
-        return str
-    }
-    
-    public var debugDescription: String {
-        return "debugDescription1111"
-    }
-    
+
     /// 检查index(查询, 移除时)
     private func checkIndex(_ index: Int) throws {
         if index < 0 || index > size - 1 {
@@ -70,7 +59,6 @@ public struct ArrayList<T: Equatable> {
         }
         elements = newElements
         print("-----------\(oldCapacity) 扩容为 \(newCapacity)---------")
-        
     }
     
     /// 缩容
@@ -96,7 +84,7 @@ public struct ArrayList<T: Equatable> {
     }
     
     /// 是否为空
-    public func isEmpty() -> Bool {
+    public var isEmpty: Bool {
         return size == 0
     }
     

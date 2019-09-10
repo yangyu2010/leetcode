@@ -23,7 +23,7 @@ class ArrayListTest: XCTestCase {
     /// 测试增删改查
     func testArrayAdd() {
         var arr = ArrayList<Int>()
-
+        
         arr.append(11)
         arr.append(22)
         arr.append(33)
@@ -33,28 +33,57 @@ class ArrayListTest: XCTestCase {
         if let e = arr.get(0) {
             XCTAssertTrue(e == 11, "")
         }
+        
+        if let e = arr.get(4) {
+            XCTAssertTrue(e == 55, "")
+        }
+        
         arr.insert(66, at: 0)
         arr.insert(77, at: arr.size)
         arr.remove(at: 1)
         arr.append(88)
         
+        // [66, 22, 33, 44, 55, 77, 88]
         XCTAssertTrue(arr.size == 7, "")
-
+        
+        if let e = arr.get(0) {
+            XCTAssertTrue(e == 66, "")
+        }
+        if let e = arr.get(arr.size - 1) {
+            XCTAssertTrue(e == 88, "")
+        }
         if let e = arr.get(1) {
             XCTAssertTrue(e == 22, "")
         }
         
-        if let e = arr.get(arr.size - 1) {
-            XCTAssertTrue(e == 88, "")
-        }
+        XCTAssert(arr.indexOf(88) == 6)
+        XCTAssert(arr.indexOf(66) == 0)
+        
+        print(arr)
+        // [66, 22, 33, 44, 55, 77, 88]
+        XCTAssert(arr.remove(at: 2) == 33)
+        
+        // [66, 22, 44, 55, 77, 88]
+        XCTAssert(arr.indexOf(88) == 5)
+        XCTAssert(arr.indexOf(66) == 0)
+        XCTAssert(arr.indexOf(33) == -1)
+        
+        XCTAssert(arr.set(0, element: 111) == 66)
+        XCTAssert(arr.set(5, element: 99) == 88)
+        
+        // [111, 22, 44, 55, 77, 99]
+        XCTAssert(arr.get(0) == 111)
+        XCTAssert(arr.get(5) == 99)
+        
+        XCTAssert(arr.remove(at: 0) == 111)
         
         XCTAssertTrue(arr.contains(11) == false, "")
         XCTAssertTrue(arr.contains(22) == true, "")
-        XCTAssertTrue(arr.isEmpty() == false, "")
-
+        XCTAssertTrue(arr.isEmpty == false, "")
+        
         arr.removeAll()
         
-        XCTAssertTrue(arr.isEmpty() == true, "")
+        XCTAssertTrue(arr.isEmpty == true, "")
         XCTAssertTrue(arr.contains(11) == false, "")
         XCTAssertTrue(arr.contains(22) == false, "")
 

@@ -81,4 +81,42 @@ class LinkedListTest: XCTestCase {
         
     }
 
+    
+    class Person: NSObject {
+        var name: String?
+        var age: Int = 0
+        
+        deinit {
+            print((name ?? "没有name") + " " + "\(age)的Person被销毁了")
+        }
+    }
+    
+    /// 测试扩容
+    func testExpansion2() {
+        //        2 2 4 8 16 32
+        //        var array: [Int] = []
+        //        for i in 1...100 {
+        //            array.append(i)
+        //            let arrayPtr = UnsafeMutableBufferPointer<Int>(start: &array, count: array.count)
+        //            print(arrayPtr)
+        //        }
+        
+        let arr = LinkedList<Person>()
+        
+        for i in 0..<30 {
+            let p = Person()
+            p.age = i
+            p.name = "name_\(i)"
+            
+            arr.append(p)
+        }
+        
+        arr.removeAll()
+        
+        //        for i in (0..<20).reversed() {
+        //            arr.remove(at: i)
+        //        }
+        
+        print(arr)
+    }
 }

@@ -21,9 +21,9 @@
 //
 //}
 
-private class ListNode<T> {
-    fileprivate var element: T
-    fileprivate var next: ListNode?
+public class ListNode<T> {
+    public var element: T
+    public var next: ListNode?
     
     init(element: T) {
         self.element = element
@@ -67,11 +67,7 @@ public class LinkedList<T: Equatable> {
         }
         return curNode
     }
-    
-    public var debugDescription: String {
-        return "debugDescription1111"
-    }
-    
+
     /// 是否为空
     public var isEmpty: Bool {
         return size == 0
