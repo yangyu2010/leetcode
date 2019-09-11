@@ -19,6 +19,7 @@
 		86EADE2223263EA7008EFE86 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EADE2123263EA7008EFE86 /* LinkedList.swift */; };
 		86EADE2423264B73008EFE86 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EADE2323264B73008EFE86 /* Error.swift */; };
 		86EADE2623265852008EFE86 /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EADE2523265852008EFE86 /* LinkedListTest.swift */; };
+		86FEBB6A2328EC9D004BF841 /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FEBB692328EC9D004BF841 /* DoubleLinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		86EADE2123263EA7008EFE86 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		86EADE2323264B73008EFE86 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		86EADE2523265852008EFE86 /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
+		86FEBB692328EC9D004BF841 /* DoubleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				86EADE2123263EA7008EFE86 /* LinkedList.swift */,
+				86FEBB692328EC9D004BF841 /* DoubleLinkedList.swift */,
 			);
 			path = "链表";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86559114231E5D45001D22D8 /* ViewController.swift in Sources */,
+				86FEBB6A2328EC9D004BF841 /* DoubleLinkedList.swift in Sources */,
 				86E1C40C23222FE300DC933C /* ArrayList.swift in Sources */,
 				86EADE2223263EA7008EFE86 /* LinkedList.swift in Sources */,
 				86EADE2423264B73008EFE86 /* Error.swift in Sources */,

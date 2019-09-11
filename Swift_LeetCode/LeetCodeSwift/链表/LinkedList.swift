@@ -24,10 +24,19 @@
 public class ListNode<T> {
     public var element: T
     public var next: ListNode?
-    
+    public var prev: ListNode?
+
     init(element: T) {
         self.element = element
     }
+    
+    init(element: T, next: ListNode?, prev: ListNode?) {
+        self.element = element
+        self.next = next
+        self.prev = prev
+    }
+    
+    
 }
 
 public class LinkedList<T: Equatable> {

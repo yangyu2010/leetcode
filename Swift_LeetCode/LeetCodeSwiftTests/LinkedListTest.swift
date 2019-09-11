@@ -14,7 +14,8 @@ class LinkedListTest: XCTestCase {
 
     /// 测试增删改查
     func testLinkedListAdd() {
-        let arr = LinkedList<Int>()
+//        let arr = LinkedList<Int>()
+        let arr = DoubleLinkedList<Int>()
         
         arr.append(11)
         arr.append(22)
@@ -26,6 +27,7 @@ class LinkedListTest: XCTestCase {
             XCTAssertTrue(e == 11, "")
         }
         
+        print(arr)
         if let e = arr.get(4) {
             XCTAssertTrue(e == 55, "")
         }
@@ -79,6 +81,16 @@ class LinkedListTest: XCTestCase {
         XCTAssertTrue(arr.contains(11) == false, "")
         XCTAssertTrue(arr.contains(22) == false, "")
         
+        arr.insert(33, at: 0)
+        arr.insert(44, at: 0)
+        arr.insert(11, at: 1)
+        arr.insert(22, at: 2)
+//        44 11 22 33
+        XCTAssertTrue(arr.get(1) == 11, "")
+        XCTAssertTrue(arr.get(0) == 44, "")
+        XCTAssertTrue(arr.get(3) == 33, "")
+        XCTAssertTrue(arr.get(2) == 22, "")
+
     }
 
     
