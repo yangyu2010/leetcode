@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67a41c5e-24c7-4986-a012-50dad692c41e" name="Default" comment="" />
+    <list default="true" id="67a41c5e-24c7-4986-a012-50dad692c41e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift_LeetCode/LeetCodeSwift.xcodeproj/project.xcworkspace/xcuserdata/yangyu.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Swift_LeetCode/LeetCodeSwift.xcodeproj/project.xcworkspace/xcuserdata/yangyu.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift_LeetCode/LeetCodeSwift/动态数组/ArrayList.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Swift_LeetCode/LeetCodeSwift/动态数组/ArrayList.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift_LeetCode/LeetCodeSwift/链表/LinkedList.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Swift_LeetCode/LeetCodeSwift/链表/LinkedList.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/150逆波兰表达式求值.py" beforeDir="false" afterPath="$PROJECT_DIR$/栈/150逆波兰表达式求值.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/155最小栈.py" beforeDir="false" afterPath="$PROJECT_DIR$/栈/155最小栈.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/1两数之和.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/1两数之和.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/20有效的括号.py" beforeDir="false" afterPath="$PROJECT_DIR$/栈/20有效的括号.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/28实现strStr.py" beforeDir="false" afterPath="$PROJECT_DIR$/字符串/28实现strStr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/344反转字符串.py" beforeDir="false" afterPath="$PROJECT_DIR$/字符串/344反转字符串.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/34在排序数组中查找元素的第一个和最后一个位置.py" beforeDir="false" afterPath="$PROJECT_DIR$/数组/34在排序数组中查找元素的第一个和最后一个位置.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/3无重复字符的最长子串.py" beforeDir="false" afterPath="$PROJECT_DIR$/字符串/3无重复字符的最长子串.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/485最大连续1的个数.py" beforeDir="false" afterPath="$PROJECT_DIR$/数组/485最大连续1的个数.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/498对角线遍历.py" beforeDir="false" afterPath="$PROJECT_DIR$/数组/498对角线遍历.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/622循环队列.py" beforeDir="false" afterPath="$PROJECT_DIR$/队列/622循环队列.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/622循环队列2.py" beforeDir="false" afterPath="$PROJECT_DIR$/队列/622循环队列2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/739每日温度.py" beforeDir="false" afterPath="$PROJECT_DIR$/数组/739每日温度.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/747至少是其他数字两倍的最大数.py" beforeDir="false" afterPath="$PROJECT_DIR$/数组/747至少是其他数字两倍的最大数.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/8字符串转换整数.py" beforeDir="false" afterPath="$PROJECT_DIR$/字符串/8字符串转换整数.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/螺旋矩阵.py" beforeDir="false" afterPath="$PROJECT_DIR$/数组/54螺旋矩阵.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/字符串/翻转字符串里的单词.py" beforeDir="false" afterPath="$PROJECT_DIR$/字符串/151翻转字符串里的单词.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,19 +33,74 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/DataStructure$1_.coverage" NAME="1.动态数组 Coverage Results" MODIFIED="1566981196646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DataStructure$.coverage" NAME="翻转字符串里的单词 Coverage Results" MODIFIED="1568196872564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/字符串" />
     <SUITE FILE_PATH="coverage/DataStructure$1_2.coverage" NAME="1.动态数组2 Coverage Results" MODIFIED="1566991423311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="DataStructure" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="1.动态数组.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1.动态数组.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="344反转字符串.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/字符串/344反转字符串.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="456">
+              <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="485最大连续1的个数.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/数组/485最大连续1的个数.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="498对角线遍历.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/数组/498对角线遍历.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-252" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="622循环队列.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/队列/622循环队列.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-283" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="622循环队列2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/队列/622循环队列2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2100" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="704二分查找.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/704二分查找.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="54螺旋矩阵.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/数组/54螺旋矩阵.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="1.动态数组.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/数组/1.动态数组.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1657" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="27移除元素.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/数组/27移除元素.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-30" />
           </provider>
         </entry>
       </file>
@@ -41,11 +118,16 @@
       <find>bounds</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/1.动态数组.py" />
         <option value="$PROJECT_DIR$/1.动态数组2.py" />
+        <option value="$PROJECT_DIR$/leetcode/1两数之和.py" />
+        <option value="$PROJECT_DIR$/字符串/翻转字符串里的单词.py" />
       </list>
     </option>
   </component>
@@ -59,8 +141,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="347" />
-    <option name="y" value="30" />
+    <option name="x" value="111" />
+    <option name="y" value="223" />
     <option name="width" value="1805" />
     <option name="height" value="1065" />
   </component>
@@ -76,6 +158,21 @@
               <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
+              <item name="字符串" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
+              <item name="队列" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -90,6 +187,12 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/数组" />
+      <recent name="$PROJECT_DIR$/队列" />
+      <recent name="$PROJECT_DIR$/字符串" />
+      <recent name="$PROJECT_DIR$/栈" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -106,7 +209,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.1.动态数组2">
+  <component name="RunManager" selected="Python.翻转字符串里的单词">
+    <configuration name="翻转字符串里的单词" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DataStructure" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/字符串" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/字符串/151翻转字符串里的单词.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="1.动态数组" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataStructure" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,9 +270,11 @@
     <list>
       <item itemvalue="Python.1.动态数组" />
       <item itemvalue="Python.1.动态数组2" />
+      <item itemvalue="Python.翻转字符串里的单词" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.翻转字符串里的单词" />
         <item itemvalue="Python.1.动态数组2" />
         <item itemvalue="Python.1.动态数组" />
       </list>
@@ -170,30 +294,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="347" y="30" width="1805" height="1065" extended-state="0" />
-    <editor active="true" />
+    <frame x="145" y="232" width="1805" height="1065" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4994709" visible="true" weight="0.23028928" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86727" visible="true" weight="0.23255815" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.44867724" />
-      <window_info id="Favorites" sideWeight="0.5005291" side_tool="true" visible="true" weight="0.23028928" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Favorites" order="2" sideWeight="0.13273002" side_tool="true" visible="true" weight="0.23255815" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.2984127" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +327,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/字符串/151翻转字符串里的单词.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -211,7 +341,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -222,13 +352,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/1159379590/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="3978" column="18" selection-start-line="3978" selection-start-column="18" selection-end-line="3978" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/1159379590/builtins.py" />
     <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/types.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -236,18 +360,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.动态数组2.py">
+    <entry file="file://$PROJECT_DIR$/1.动态数组2.py" />
+    <entry file="file://$PROJECT_DIR$/1.动态数组.py" />
+    <entry file="file://$PROJECT_DIR$/Swift_LeetCode/LeetCodeSwift/AppDelegate.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="255">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.动态数组.py">
+    <entry file="file://$PROJECT_DIR$/字符串/8字符串转换整数.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/7整数反转.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-356">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/2两数相加.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/1两数之和.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/链表/2两数相加.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/栈/20有效的括号.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/字符串/151翻转字符串里的单词.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/字符串/28实现strStr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/66加一.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/字符串/344反转字符串.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数组/485最大连续1的个数.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数组/498对角线遍历.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/队列/622循环队列.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-283" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/队列/622循环队列2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2100" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/704二分查找.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数组/54螺旋矩阵.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数组/1.动态数组.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1657" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数组/27移除元素.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30" />
       </provider>
     </entry>
   </component>

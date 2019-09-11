@@ -3,6 +3,8 @@
 # Author: Yu Yang
 
 
+# https://leetcode-cn.com/problems/two-sum/
+
 def twoSum(nums:[int], target: int):
     hashmap = {}
     for i in range(len(nums)):

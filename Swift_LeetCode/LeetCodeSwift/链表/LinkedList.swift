@@ -7,7 +7,7 @@
 //  链表
 
 
-// one.next得到的只是原来的two的一个拷贝 不是指针
+//// one.next得到的只是原来的two的一个拷贝 不是指针
 //struct ListNode<T> {
 //    private var element: T
 //    private var next: ListNode?

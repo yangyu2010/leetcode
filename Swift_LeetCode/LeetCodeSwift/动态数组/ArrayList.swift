@@ -8,7 +8,6 @@
 
 public struct ArrayList<T: Equatable> {
 
-
     /// 元素没有找到返回值
     public let ELEMENT_NOT_FOUND: Int = -1
     /// 默认创建数组的大小
