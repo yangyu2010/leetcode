@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="67a41c5e-24c7-4986-a012-50dad692c41e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swift_LeetCode/LeetCodeSwift.xcodeproj/project.xcworkspace/xcuserdata/yangyu.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Swift_LeetCode/LeetCodeSwift.xcodeproj/project.xcworkspace/xcuserdata/yangyu.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/2两数相加.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,11 +81,6 @@
             <path>
               <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="二叉树" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -208,7 +204,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="111" y="223" width="1805" height="1065" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -217,13 +212,13 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86727" visible="true" weight="0.23255815" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8677249" visible="true" weight="0.23255815" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.13273002" side_tool="true" visible="true" weight="0.23255815" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.2984127" />
+      <window_info id="Favorites" order="2" sideWeight="0.13227513" side_tool="true" visible="true" weight="0.23255815" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2984127" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />

@@ -71,7 +71,12 @@ public class DoubleLinkedList<T: Equatable> {
     
     /// 获取某个位置的元素
     public func get(_ index: Int) -> T? {
-        try! checkIndex(index)
+        do {
+            try checkIndex(index)
+        } catch {
+            print("get action error")
+            return nil
+        }
         return node(of: index)?.element
     }
     
