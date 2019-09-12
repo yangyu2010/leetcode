@@ -16,6 +16,11 @@
 		8655911C231E5D46001D22D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8655911A231E5D46001D22D8 /* LaunchScreen.storyboard */; };
 		86B1EAE72329DA5F004BF67B /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B1EAE62329DA5F004BF67B /* Stack.swift */; };
 		86B1EAE92329E084004BF67B /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B1EAE82329E084004BF67B /* StackTest.swift */; };
+		86B1EAEB2329E83E004BF67B /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B1EAEA2329E83E004BF67B /* Queue.swift */; };
+		86B1EAED2329E9D5004BF67B /* QueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B1EAEC2329E9D5004BF67B /* QueueTest.swift */; };
+		86B1EAEF2329EBB9004BF67B /* Deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B1EAEE2329EBB9004BF67B /* Deque.swift */; };
+		86B1EAF12329F316004BF67B /* CircleDeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B1EAF02329F316004BF67B /* CircleDeque.swift */; };
+		86B1EAF3232A243E004BF67B /* CircleDeque2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B1EAF2232A243E004BF67B /* CircleDeque2.swift */; };
 		86E1C40C23222FE300DC933C /* ArrayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1C40B23222FE300DC933C /* ArrayList.swift */; };
 		86EADE2023263432008EFE86 /* Desc in Resources */ = {isa = PBXBuildFile; fileRef = 86EADE1F23263432008EFE86 /* Desc */; };
 		86EADE2223263EA7008EFE86 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EADE2123263EA7008EFE86 /* LinkedList.swift */; };
@@ -48,6 +53,11 @@
 		8655911D231E5D46001D22D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86B1EAE62329DA5F004BF67B /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		86B1EAE82329E084004BF67B /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
+		86B1EAEA2329E83E004BF67B /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		86B1EAEC2329E9D5004BF67B /* QueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTest.swift; sourceTree = "<group>"; };
+		86B1EAEE2329EBB9004BF67B /* Deque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deque.swift; sourceTree = "<group>"; };
+		86B1EAF02329F316004BF67B /* CircleDeque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleDeque.swift; sourceTree = "<group>"; };
+		86B1EAF2232A243E004BF67B /* CircleDeque2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleDeque2.swift; sourceTree = "<group>"; };
 		86E1C40B23222FE300DC933C /* ArrayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayList.swift; sourceTree = "<group>"; };
 		86EADE1F23263432008EFE86 /* Desc */ = {isa = PBXFileReference; lastKnownFileType = text; path = Desc; sourceTree = "<group>"; };
 		86EADE2123263EA7008EFE86 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
@@ -77,6 +87,7 @@
 		861E083623226D6000A38E04 /* LeetCodeSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				86B1EAEC2329E9D5004BF67B /* QueueTest.swift */,
 				86B1EAE82329E084004BF67B /* StackTest.swift */,
 				861E083F23226DA900A38E04 /* ArrayListTest.swift */,
 				86EADE2523265852008EFE86 /* LinkedListTest.swift */,
@@ -126,6 +137,10 @@
 		86559123231E5D77001D22D8 /* 队列 */ = {
 			isa = PBXGroup;
 			children = (
+				86B1EAEA2329E83E004BF67B /* Queue.swift */,
+				86B1EAEE2329EBB9004BF67B /* Deque.swift */,
+				86B1EAF02329F316004BF67B /* CircleDeque.swift */,
+				86B1EAF2232A243E004BF67B /* CircleDeque2.swift */,
 			);
 			path = "队列";
 			sourceTree = "<group>";
@@ -261,6 +276,7 @@
 				861E083823226D6000A38E04 /* LeetCodeSwiftTests.swift in Sources */,
 				861E084023226DA900A38E04 /* ArrayListTest.swift in Sources */,
 				86EADE2623265852008EFE86 /* LinkedListTest.swift in Sources */,
+				86B1EAED2329E9D5004BF67B /* QueueTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,11 +284,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B1EAF12329F316004BF67B /* CircleDeque.swift in Sources */,
 				86559114231E5D45001D22D8 /* ViewController.swift in Sources */,
 				86FEBB6A2328EC9D004BF841 /* DoubleLinkedList.swift in Sources */,
+				86B1EAEF2329EBB9004BF67B /* Deque.swift in Sources */,
 				86B1EAE72329DA5F004BF67B /* Stack.swift in Sources */,
+				86B1EAEB2329E83E004BF67B /* Queue.swift in Sources */,
 				86E1C40C23222FE300DC933C /* ArrayList.swift in Sources */,
 				86EADE2223263EA7008EFE86 /* LinkedList.swift in Sources */,
+				86B1EAF3232A243E004BF67B /* CircleDeque2.swift in Sources */,
 				86EADE2423264B73008EFE86 /* Error.swift in Sources */,
 				86559112231E5D45001D22D8 /* AppDelegate.swift in Sources */,
 			);

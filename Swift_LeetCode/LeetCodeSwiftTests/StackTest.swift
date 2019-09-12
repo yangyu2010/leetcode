@@ -12,7 +12,7 @@ import XCTest
 class StackTest: XCTestCase {
 
     func testExample() {
-       let stack = Stack<Int>()
+        let stack = Stack<Int>()
         
         stack.clear()
         stack.push(element: 11)

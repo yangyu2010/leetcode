@@ -14,18 +14,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        testArrayList()
-//        testArrayList2()
-//        var arr = Array<Int>()
-//        arr.append(11)
-//        arr.append(22)
-//        arr.append(33)
-//        arr.append(44)
-//        arr.append(55)
-//        print(arr)
-//        arr.insert(66, at: 1)
-//        print(arr[0])
+//        testCircleDeque()
+    }
+    
+    func testCircleDeque() {
+        var q = CircleDeque<Int>()
+        q.enQueueRear(element: 22)
+        q.enQueueFront(element: 11)
+        q.enQueueFront(element: 33)
+        q.enQueueRear(element: 44)
+        q.enQueueFront(element: 55)
+        q.enQueueRear(element: 66)
+
+        print(q)
         
+        q.deQueueFront()
+        q.deQueueFront()
+        q.deQueueFront()
     }
 
     func testArrayList() {
