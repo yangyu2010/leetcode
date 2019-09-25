@@ -15,10 +15,14 @@ class AVLTreeTest: XCTestCase {
         
         let tree = AVLTree<Int>()
         
-        for aNum in [81,
+        for aNum in [19,
                      77,
-                     19,] {
+                     81,
+                     16,
+                     12,
+                    10] {
                         tree.add(element: aNum)
+                        tree._print()
         }
         //        for _ in 0..<10 {
         //            let aNum = Int(arc4random() % 100)
@@ -31,7 +35,7 @@ class AVLTreeTest: XCTestCase {
         //        tree.add(element: 33)
         //        tree.add(element: 44)
         
-        tree._print()
+        
         
 
         
