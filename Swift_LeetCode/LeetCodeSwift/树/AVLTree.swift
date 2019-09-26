@@ -107,6 +107,7 @@ class AVLTree<T: Comparable>: BinarySearchTree<T> {
         root?.parent = node.parent
         node.parent = root
         node.left?.parent = node
+        node.right?.parent = node
 
         (node as! AVLNode).updateHeight()
         (root as! AVLNode).updateHeight()
@@ -129,7 +130,8 @@ class AVLTree<T: Comparable>: BinarySearchTree<T> {
         root?.parent = node.parent
         node.parent = root
         node.right?.parent = node
-        
+        node.left?.parent = node
+
         (node as! AVLNode).updateHeight()
         (root as! AVLNode).updateHeight()
     }
