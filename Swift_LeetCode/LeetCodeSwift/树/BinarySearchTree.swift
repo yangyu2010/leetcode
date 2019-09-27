@@ -82,8 +82,9 @@ class BinarySearchTree<T: Comparable>: BinaryTree<T> {
                 // 没有parent
                 root = nil
             }
+
         } else { // 度为1的节点 找到左节点 或者右节点
-           let replacement = node.left != nil ? node.left : node.right
+            let replacement = node.left != nil ? node.left : node.right
             replacement?.parent = node.parent
             
             if node.isLeftChild {
@@ -92,6 +93,7 @@ class BinarySearchTree<T: Comparable>: BinaryTree<T> {
                 node.parent?.right = replacement
             }
         }
+        afterRemove(node: node)
     }
     
     public func contains(element: T) -> Bool {

@@ -65,6 +65,23 @@ class AVLTree<T: Comparable>: BinarySearchTree<T> {
         }
     }
     
+    override func afterRemove(node: Node<T>?) {
+        // 和添加差不多 不过删除可能会导致所有的父节点失衡 一直往上找
+        if node == nil {
+            return
+        }
+        var cur = node!.parent
+        while cur != nil {
+            if isBalanced(cur) {
+                (cur as! AVLNode).updateHeight()
+                cur = cur?.parent
+            } else {
+                // 恢复平衡
+                rebalance(cur)
+            }
+        }
+    }
+    
     private func rebalance(_ grand: Node<T>?) {
         if grand == nil { return }
         guard let parent = (grand as! AVLNode).tallerChild else { return }
@@ -92,33 +109,23 @@ class AVLTree<T: Comparable>: BinarySearchTree<T> {
 
     private func rotateLeft(_ node: Node<T>?) {
         guard let node = node else { return }
-        let root = node.right
-        node.right = root?.left
-        root?.left = node
+        guard let root = node.right else { return }
+        node.right = root.left
+        root.left = node
         
-        if node.isLeftChild {
-            node.parent?.left = root
-        } else if node.isRightChild {
-            node.parent?.right = root
-        } else {
-            self.root = root
-        }
-        
-        root?.parent = node.parent
-        node.parent = root
-        node.left?.parent = node
-        node.right?.parent = node
-
-        (node as! AVLNode).updateHeight()
-        (root as! AVLNode).updateHeight()
+        afterRotate(node, root: root)
     }
     
     private func rotateRight(_ node: Node<T>?) {
         guard let node = node else { return }
-        let root = node.left
-        node.left = root?.right
-        root?.right = node
+        guard let root = node.left else { return }
+        node.left = root.right
+        root.right = node
         
+        afterRotate(node, root: root)
+    }
+    
+    private func afterRotate(_ node: Node<T>, root: Node<T>) {
         if node.isLeftChild {
             node.parent?.left = root
         } else if node.isRightChild {
@@ -127,16 +134,12 @@ class AVLTree<T: Comparable>: BinarySearchTree<T> {
             self.root = root
         }
         
-        root?.parent = node.parent
+        root.parent = node.parent
         node.parent = root
         node.right?.parent = node
         node.left?.parent = node
-
-        (node as! AVLNode).updateHeight()
-        (root as! AVLNode).updateHeight()
-    }
-    
-    private func afterRotate(_ node: Node<T>?, root: Node<T>?) {
         
+        (node as? AVLNode)?.updateHeight()
+        (root as? AVLNode)?.updateHeight()
     }
 }
