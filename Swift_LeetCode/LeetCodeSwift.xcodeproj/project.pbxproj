@@ -16,6 +16,7 @@
 		86559117231E5D45001D22D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86559115231E5D45001D22D8 /* Main.storyboard */; };
 		86559119231E5D46001D22D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86559118231E5D46001D22D8 /* Assets.xcassets */; };
 		8655911C231E5D46001D22D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8655911A231E5D46001D22D8 /* LaunchScreen.storyboard */; };
+		867978B32358449F0054E87E /* RBTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867978B22358449F0054E87E /* RBTree.swift */; };
 		86B1EAE72329DA5F004BF67B /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B1EAE62329DA5F004BF67B /* Stack.swift */; };
 		86B1EAE92329E084004BF67B /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B1EAE82329E084004BF67B /* StackTest.swift */; };
 		86B1EAEB2329E83E004BF67B /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B1EAEA2329E83E004BF67B /* Queue.swift */; };
@@ -58,6 +59,7 @@
 		86559118231E5D46001D22D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8655911B231E5D46001D22D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8655911D231E5D46001D22D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		867978B22358449F0054E87E /* RBTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBTree.swift; sourceTree = "<group>"; };
 		86B1EAE62329DA5F004BF67B /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		86B1EAE82329E084004BF67B /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
 		86B1EAEA2329E83E004BF67B /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				86D19B5E2339C01400E9AE87 /* BinaryTree.swift */,
 				86D19B602339C6DE00E9AE87 /* BinarySearchTree.swift */,
 				8613551F233A17D3008B7C3D /* AVLTree.swift */,
+				867978B22358449F0054E87E /* RBTree.swift */,
 			);
 			path = "树";
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				86B1EAEB2329E83E004BF67B /* Queue.swift in Sources */,
 				86E1C40C23222FE300DC933C /* ArrayList.swift in Sources */,
 				86EADE2223263EA7008EFE86 /* LinkedList.swift in Sources */,
+				867978B32358449F0054E87E /* RBTree.swift in Sources */,
 				86D19B5F2339C01400E9AE87 /* BinaryTree.swift in Sources */,
 				86B1EAF3232A243E004BF67B /* CircleDeque2.swift in Sources */,
 				86EADE2423264B73008EFE86 /* Error.swift in Sources */,
