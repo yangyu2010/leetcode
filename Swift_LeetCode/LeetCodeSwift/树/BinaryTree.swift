@@ -40,6 +40,17 @@ class Node<T> {
         self.parent = parent
     }
     
+    var asString: String {
+        return treeString(self){
+            var parentString = "null"
+            if $0.parent != nil {
+                parentString = "\($0.parent!.element)"
+            }
+            
+            return ("\($0.element)" + "(" + parentString + ")" ,$0.left, $0.right)
+        }
+    }
+    
     /// 前驱节点
     var predecessor: Node<T>? {
         var p = left
@@ -86,6 +97,16 @@ class Node<T> {
     
     var isRightChild: Bool {
         return parent != nil && self === parent?.right
+    }
+    
+    // 兄弟节点
+    var sibling: Node<T>? {
+        if isLeftChild {
+            return parent?.right
+        } else if isRightChild {
+            return parent?.left
+        }
+        return nil
     }
 
 }
@@ -223,15 +244,3 @@ extension Node {
     }
 }
 
-extension Node {
-
-    var asString: String {
-        return treeString(self){
-            var s = "null"
-            if $0.parent != nil {
-                s = "\($0.parent!.element)"
-            }
-            return ("\($0.element)" + "(" + s + ")" ,$0.left, $0.right)
-        }
-    }
-}
