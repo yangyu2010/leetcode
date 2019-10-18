@@ -56,10 +56,11 @@ class RBTree<T: Comparable>: BinarySearchTree<T> {
      添加总共有12种情况, 可以分3类
      1. parent是黑色, 总共有4种情况, 不做处理
      
-     2. parent是红色, uncle是红色, 总共有4种情况, 统一处理
+     2. parent是红色, uncle是红色, 总共有4种情况, 统一处理(B-tree中的上溢)
         parent = BLACK,
         uncle = BLACK,
         grand = RED, 同时再去 check grand
+        若上溢到根结点, 把根结点染黑即可
      
      3. parent是红色, uncle是黑色, 总共有4种情况, 分别处理 (LL RR LR RL)
         LL: parent = BLACK,
@@ -76,7 +77,7 @@ class RBTree<T: Comparable>: BinarySearchTree<T> {
             parent 右旋转, grand左旋转
      */
     override func afterAdd(node: Node<T>?) {
-        guard let rbNode = node else { return }
+        guard let rbNode = node as? RBTreeNode else { return }
         guard let parent = rbNode.parent as? RBTreeNode else {
             colorBalck(node)
             return
@@ -95,6 +96,7 @@ class RBTree<T: Comparable>: BinarySearchTree<T> {
             colorBalck(uncle)
             colorRed(grand)
             afterAdd(node: grand)
+            // 若上溢到根结点, 把根结点染黑即可
             return
         }
         
@@ -136,7 +138,11 @@ class RBTree<T: Comparable>: BinarySearchTree<T> {
     //MARK:- 删除后处理
     
     override func afterRemove(node: Node<T>?) {
-        
+//        guard let rbNode = node as? RBTreeNode else { return }
+//        guard let parent = rbNode.parent as? RBTreeNode else {
+//            colorBalck(node)
+//            return
+//        }
     }
   
     
