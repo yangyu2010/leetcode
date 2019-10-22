@@ -65,7 +65,7 @@ class AVLTree<T: Comparable>: BinarySearchTree<T> {
         }
     }
     
-    override func afterRemove(node: Node<T>?) {
+    override func afterRemove(node: Node<T>?, replacement: Node<T>?) {
         // 和添加差不多 不过删除可能会导致所有的父节点失衡 一直往上找
         if node == nil {
             return

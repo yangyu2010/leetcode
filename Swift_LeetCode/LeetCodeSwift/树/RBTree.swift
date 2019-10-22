@@ -135,18 +135,34 @@ class RBTree<T: Comparable>: BinarySearchTree<T> {
     }
 
     
-    //MARK:- 删除后处理
+    // MARK:- 删除后处理
     
-    override func afterRemove(node: Node<T>?) {
-//        guard let rbNode = node as? RBTreeNode else { return }
-//        guard let parent = rbNode.parent as? RBTreeNode else {
-//            colorBalck(node)
-//            return
-//        }
+    override func afterRemove(node: Node<T>?, replacement: Node<T>?) {
+    
+        guard let rbNode = node as? RBTreeNode else { return }
+        
+        // 1.删除的是红色, 不处理
+        if rbNode.color == RED {
+            return
+        }
+        
+        // 2.如果replacement存在, 说明node是度为1的节点, 把替换的节点染黑色即可
+        if replacement != nil {
+            colorBalck(replacement)
+            return
+        }
+        
+        // 3.删除的是黑色, 同时也是叶子节点
+        
+        // 3.1 node是根结点 直接返回
+        guard let parent = node?.parent else { return }
+        
+        
     }
   
     
-    //MARK:- 旋转
+    // MARK:- 旋转
+    // 旋转和 AVL 树一样, 区别在于, AVL旋转后需要更新高度, 红黑树不用
     
     private func rotateLeft(_ node: Node<T>?) {
         guard let node = node else { return }
