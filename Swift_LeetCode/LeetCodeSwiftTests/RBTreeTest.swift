@@ -18,6 +18,13 @@ class RBTreeTest: XCTestCase {
         for aNum in [39, 93, 84, 60, 74, 64, 7, 67, 3, 78, 37, 76, 89, 100, 50, 80] {
             tree.add(element: aNum)
         }
+        tree.remove(element: 78)
+        tree.remove(element: 80)
+        
+        tree._print()
+
+//        tree.remove(element: 7)
+
 //        for aNum in [19, 77, 81, 16, 12, 10, 17, 18, 20, 84, 82] {
 //            tree.add(element: aNum)
 //        }

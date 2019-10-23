@@ -14,7 +14,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testCircleDeque()
+//        testCircleDeque()
+        
+        
+        var a = 2, b = 3
+        a ^= b
+        b ^= a
+        a ^= b
+        print(a)
+        print(b)
+        
     }
     
     func testCircleDeque() {
