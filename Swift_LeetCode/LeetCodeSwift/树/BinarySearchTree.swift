@@ -67,7 +67,8 @@ class BinarySearchTree<T: Comparable>: BinaryTree<T> {
         
         // 有两个子节点时 肯定会有前驱节点 找到前驱节点
         if node.hasTwoChildren {
-            let predecessor = node.predecessor!
+//            let predecessor = node.predecessor!
+            let predecessor = node.successor!
             node.element = predecessor.element
             node = predecessor
         }

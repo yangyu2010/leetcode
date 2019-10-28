@@ -20,39 +20,41 @@ class RBTreeTest: XCTestCase {
         }
         tree.remove(element: 78)
         tree.remove(element: 80)
-        
+        tree.remove(element: 7)
+
         tree._print()
-
-//        tree.remove(element: 7)
-
-//        for aNum in [19, 77, 81, 16, 12, 10, 17, 18, 20, 84, 82] {
-//            tree.add(element: aNum)
+        print("\n\n")
+        
+        
+//        for aNum in [39, 93, 84, 60, 74, 64, 7, 67, 3, 78, 37, 76, 89, 100, 50, 80].reversed() {
+//            tree.remove(element: aNum)
+//            print("\n\n")
 //        }
-        
-        tree._print()
-//        tree.remove(element: 82)
-//        tree.remove(element: 20)
-//        tree.remove(element: 77)
-//
-//        tree.remove(element: 84)
-//        tree._print()
-//
-//        tree.remove(element: 16)
-//
-//        tree._print()
-        
-        //        for _ in 0..<10 {
-        //            let aNum = Int(arc4random() % 100)
-        //            print(aNum)
-        //            tree.add(element: aNum)
-        //        }
-        
-        //        tree.add(element: 11)
-        //        tree.add(element: 22)
-        //        tree.add(element: 33)
-        //        tree.add(element: 44)
         
     }
 
+    func testExample2() {
+        
+        let tree = RBTree<Int>()
+        let arr = [57, 8, 88, 77, 27, 94, 67, 5, 38, 95,72, 81, 77, 64, 11, 45, 65, 56, 53, 19, 86, 62, 59]
+        for aNum in arr {
+            tree.add(element: aNum)
+        }
+        
+        tree._print()
 
+        
+//        for aNum in arr {
+//            tree.remove(element: aNum)
+//        }
+//
+//        for aNum in arr.reversed() {
+//            tree.add(element: aNum)
+//        }
+//
+//        for aNum in arr {
+//            tree.remove(element: aNum)
+//        }
+        
+    }
 }

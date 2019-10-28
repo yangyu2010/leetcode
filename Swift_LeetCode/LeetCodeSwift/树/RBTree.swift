@@ -34,10 +34,10 @@ class RBTreeNode<T>: Node<T> {
             if let rbNode = $0 as? RBTreeNode {
                 if rbNode.isRed {
                     colorString = "红"
-                    return ("\($0.element)" + " (" + parentString + ")" + "(" + colorString + ")" ,$0.left, $0.right)
+                    return ("\($0.element)" + "(" + parentString + ")" + "(" + colorString + ")" ,$0.left, $0.right)
                 }
             }
-            return ("\($0.element)" + " (" + parentString + ")" ,$0.left, $0.right)
+            return ("\($0.element)" + "(" + parentString + ")" ,$0.left, $0.right)
         }
     }
 }
@@ -216,7 +216,7 @@ class RBTree<T: Comparable>: BinarySearchTree<T> {
         guard let parent = rbNode.parent as? RBTreeNode else { return }
         
         // 先看自己是 left 还是 right
-        let isLeftChild = parent.left == nil || parent.left!.isLeftChild
+        let isLeftChild = parent.left == nil || rbNode.isLeftChild
         guard var sibling = (isLeftChild ? parent.right : parent.left) as? RBTreeNode else {
             print("---------Warning---- sibling节点为空 没有处理")
             return
